@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur les drapeaux</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Devinez le drapeau du pays</h1>
+            
+            <div class="stats-container">
+                <div class="stat-badge blue" id="seen-badge">Drapeaux vus : <span>0</span></div>
+                <div class="stat-badge green" id="correct-badge">Bonnes réponses : <span>0</span></div>
+                <div class="stat-badge red" id="wrong-badge">Mauvaises réponses : <span>0</span></div>
+            </div>
+        </header>
+
+        <main class="quiz-container">
+            <div class="flag-wrapper">
+                <div class="loader" id="loader"></div>
+                <img id="flag-image" src="" alt="Drapeau à deviner" style="display: none;">
+            </div>
+
+            <div class="options-container" id="options-container"></div>
+            <div id="result-message" class="result-message hidden"></div>
+            <button id="next-btn" class="next-btn hidden">Drapeau Suivant ➔</button>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
